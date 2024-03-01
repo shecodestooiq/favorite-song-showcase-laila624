@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorite Song Showcase</title>
   </head>
-
+  
   <body>
+    <div id="form">
+      <form action="">
+        <div>
+          <label for="songname">Song Name :</label><br>
+          <input type="text" id="songname" placeholder="Song Name" name="songname" required>
+        </div>
+        <br>
+        <div>
+          <label for="youtube">Youtube :</label><br>
+          <input type="text" id="youtube" placeholder="Youtube Url" name="youtube" required>
+        </div>
+        <br>
+        <div>
+          <label for="description">Description :</label><br>
+          <textarea id="description" cols="30" rows="10" placeholder="Description" name="description" required></textarea>
+        </div>
+        <br>
+        <div>
+          <label for="year">Year :</label><br>
+          <input type="number" id="year" placeholder="year" name="year" required>
+        </div>
+        <br>
+        <button onclick="displaySongInfo()" type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="displayarea">
+      <h1 id="songnamevalue"></h1>
+      <div id="youtubevalue"></div>
+      <h2 id="descriptionvalue"></h2>
+      <h2 id="yearvalue"></h2>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
